@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const Navbar = () => {
-  const handleLogout = () => {
-    // await logout();
+  const { logout, user } = useAuth();
+
+  const handleLogout = async () => {
+    await logout();
   };
 
   return (
@@ -35,7 +38,7 @@ const Navbar = () => {
             <li>
               <Link to={"/about"}>About</Link>
             </li>
-            
+            {!user && (
               <>
                 <li>
                   <Link to={"/login"}>Login</Link>
@@ -44,11 +47,13 @@ const Navbar = () => {
                   <Link to={"/register"}>Register</Link>
                 </li>
               </>
-            
+            )}
+            {user && (
               <li>
                 <Link to={"/dashboard"}>Dashboard</Link>
               </li>
-            
+            )}
+            {user && (
               <li>
                 <button
                   onClick={handleLogout}
@@ -57,7 +62,7 @@ const Navbar = () => {
                   Logout
                 </button>
               </li>
-            
+            )}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">daisyUI</a>
@@ -70,7 +75,7 @@ const Navbar = () => {
           <li>
             <Link to={"/about"}>About</Link>
           </li>
-          
+          {!user && (
             <>
               <li>
                 <Link to={"/login"}>Login</Link>
@@ -79,24 +84,26 @@ const Navbar = () => {
                 <Link to={"/register"}>Register</Link>
               </li>
             </>
-          
+          )}
+          {user && (
             <li>
               <Link to={"/dashboard"}>Dashboard</Link>
             </li>
-          
+          )}
         </ul>
       </div>
       <div className="navbar-end space-x-2">
+        {user && (
           <button
             onClick={handleLogout}
             className="btn bg-red-500 text-white hidden lg:block"
           >
             Logout
           </button>
-       
+        )}
         <div className="avatar">
           <div className="w-12 rounded-full border-2 border-black">
-            {/* <img src={user?.photoURL || "/public/placeholder.jpg"} /> */}
+            <img src={user?.photoURL || "/public/placeholder.jpg"} />
           </div>
         </div>
       </div>

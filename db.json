@@ -1,0 +1,84 @@
+{
+  "flowers": [
+    {
+      "id": "1",
+      "title": "Red Roses Bouquet",
+      "brand": "Blooming Elegance",
+      "price": "50",
+      "description": "A classic bouquet of fresh red roses, perfect for expressing love and admiration.",
+      "image_url": "https://www.pexels.com/photo/close-photography-of-red-and-pink-rose-56866/"
+    },
+    {
+      "id": "2",
+      "title": "Sunflower Delight",
+      "brand": "Sunshine Blooms",
+      "price": "35",
+      "description": "Bright and cheerful sunflowers arranged in a beautiful bouquet, ideal for spreading joy.",
+      "image_url": "https://www.pexels.com/photo/pink-red-yellow-petaled-flower-in-close-up-shot-85773/"
+    },
+    {
+      "id": "3",
+      "title": "Orchid Elegance",
+      "brand": "Exotic Flora",
+      "price": "75",
+      "description": "Elegant and exotic orchids that add a touch of sophistication to any setting.",
+      "image_url": "https://www.pexels.com/photo/close-up-photograph-of-flowers-931177/"
+    },
+    {
+      "id": "4",
+      "title": "Mixed Spring Flowers",
+      "brand": "Seasonal Blooms",
+      "price": "45",
+      "description": "A vibrant mix of spring flowers including tulips, daffodils, and hyacinths.",
+      "image_url": "https://www.pexels.com/photo/pink-rose-736230/"
+    },
+    {
+      "id": "5",
+      "title": "Lilies of the Valley",
+      "brand": "Pure Blossom",
+      "price": "60",
+      "description": "Delicate and fragrant lilies of the valley, perfect for a fresh and calming arrangement.",
+      "image_url": "https://www.pexels.com/photo/bed-of-flowers-68507/"
+    },
+    {
+      "id": "6",
+      "title": "Carnation Charm",
+      "brand": "Charming Blooms",
+      "price": "40",
+      "description": "A charming bouquet of colorful carnations, great for any occasion.",
+      "image_url": "https://www.pexels.com/photo/yellow-sunflower-macro-photographyt-46216/"
+    },
+    {
+      "id": "7",
+      "title": "Peony Perfection",
+      "brand": "Elegant Petals",
+      "price": "70",
+      "description": "Luxurious and lush peonies that make a stunning statement.",
+      "image_url": "https://www.pexels.com/photo/selective-focus-photography-of-pink-and-yellow-tulips-flowers-1883385/"
+    },
+    {
+      "id": "8",
+      "title": "Daisy Dreams",
+      "brand": "Dreamy Florals",
+      "price": "30",
+      "description": "Simple and sweet daisies that bring a touch of freshness and innocence.",
+      "image_url": "https://www.pexels.com/photo/white-brown-and-purple-petaled-flowers-931162/"
+    },
+    {
+      "id": "9",
+      "title": "Lavender Love",
+      "brand": "Lavender Lane",
+      "price": "55",
+      "description": "Soothing and aromatic lavender flowers, perfect for relaxation.",
+      "image_url": "https://www.pexels.com/photo/close-up-photography-of-pink-flowers-1408221/"
+    },
+    {
+      "id": "10",
+      "title": "Tulip Treasure",
+      "brand": "Tulip Haven",
+      "price": "50",
+      "description": "A delightful array of colorful tulips that signify new beginnings.",
+      "image_url": "https://www.pexels.com/photo/white-daisy-flower-67857/"
+    }
+  ]
+}
