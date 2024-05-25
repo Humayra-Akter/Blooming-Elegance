@@ -6,7 +6,7 @@
       "brand": "Blooming Elegance",
       "price": "50",
       "description": "A classic bouquet of fresh red roses, perfect for expressing love and admiration.",
-      "image_url": "https://www.pexels.com/photo/close-photography-of-red-and-pink-rose-56866/"
+      "image_url": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?q=80&w=1918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "brand": "Sunshine Blooms",
       "price": "35",
       "description": "Bright and cheerful sunflowers arranged in a beautiful bouquet, ideal for spreading joy.",
-      "image_url": "https://www.pexels.com/photo/pink-red-yellow-petaled-flower-in-close-up-shot-85773/"
+      "image_url": "https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "brand": "Exotic Flora",
       "price": "75",
       "description": "Elegant and exotic orchids that add a touch of sophistication to any setting.",
-      "image_url": "https://www.pexels.com/photo/close-up-photograph-of-flowers-931177/"
+      "image_url": "https://images.unsplash.com/photo-1606041008023-472dfb5e530f?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "brand": "Seasonal Blooms",
       "price": "45",
       "description": "A vibrant mix of spring flowers including tulips, daffodils, and hyacinths.",
-      "image_url": "https://www.pexels.com/photo/pink-rose-736230/"
+      "image_url": "https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "brand": "Pure Blossom",
       "price": "60",
       "description": "Delicate and fragrant lilies of the valley, perfect for a fresh and calming arrangement.",
-      "image_url": "https://www.pexels.com/photo/bed-of-flowers-68507/"
+      "image_url": "https://images.unsplash.com/photo-1527061011665-3652c757a4d4?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "brand": "Charming Blooms",
       "price": "40",
       "description": "A charming bouquet of colorful carnations, great for any occasion.",
-      "image_url": "https://www.pexels.com/photo/yellow-sunflower-macro-photographyt-46216/"
+      "image_url": "https://images.unsplash.com/photo-1470509037663-253afd7f0f51?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "7",
@@ -54,7 +54,7 @@
       "brand": "Elegant Petals",
       "price": "70",
       "description": "Luxurious and lush peonies that make a stunning statement.",
-      "image_url": "https://www.pexels.com/photo/selective-focus-photography-of-pink-and-yellow-tulips-flowers-1883385/"
+      "image_url": "https://images.unsplash.com/photo-1520763185298-1b434c919102?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "8",
@@ -62,7 +62,7 @@
       "brand": "Dreamy Florals",
       "price": "30",
       "description": "Simple and sweet daisies that bring a touch of freshness and innocence.",
-      "image_url": "https://www.pexels.com/photo/white-brown-and-purple-petaled-flowers-931162/"
+      "image_url": "https://images.unsplash.com/photo-1447875569765-2b3db822bec9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "9",
@@ -70,7 +70,7 @@
       "brand": "Lavender Lane",
       "price": "55",
       "description": "Soothing and aromatic lavender flowers, perfect for relaxation.",
-      "image_url": "https://www.pexels.com/photo/close-up-photography-of-pink-flowers-1408221/"
+      "image_url": "https://images.unsplash.com/photo-1431263154979-0982327fccbb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "10",
@@ -78,7 +78,7 @@
       "brand": "Tulip Haven",
       "price": "50",
       "description": "A delightful array of colorful tulips that signify new beginnings.",
-      "image_url": "https://www.pexels.com/photo/white-daisy-flower-67857/"
+      "image_url": "https://images.unsplash.com/photo-1615280825886-fa817c0a06cc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
 }
