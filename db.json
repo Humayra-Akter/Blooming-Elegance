@@ -4,7 +4,7 @@
       "id": "1",
       "title": "Red Roses Bouquet",
       "brand": "Blooming Elegance",
-      "price": "50",
+      "price": "20",
       "description": "A classic bouquet of fresh red roses, perfect for expressing love and admiration.",
       "image_url": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?q=80&w=1918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
@@ -79,6 +79,14 @@
       "price": "50",
       "description": "A delightful array of colorful tulips that signify new beginnings.",
       "image_url": "https://images.unsplash.com/photo-1615280825886-fa817c0a06cc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "",
+      "title": "close-up",
+      "brand": "Boquet ",
+      "price": "20",
+      "description": "Bethar oshudh",
+      "image_url": "https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]
 }
