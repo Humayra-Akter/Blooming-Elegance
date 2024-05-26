@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.bannerBg{
-    background-image: url("/public/banner.jpeg");
-    object-fit: cover;
+.bannerBg {
+  background-image: url("/public/1.jpg");
+  object-fit: cover;
 }
