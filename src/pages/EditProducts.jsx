@@ -32,7 +32,11 @@ const EditProducts = () => {
       body: JSON.stringify(data),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        console.log(data);
+        setSuccessMessage("Product updated successfully!");
+        setTimeout(() => setSuccessMessage(""), 3000);
+      });
   };
 
   return (

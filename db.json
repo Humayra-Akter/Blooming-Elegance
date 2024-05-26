@@ -1,22 +1,6 @@
 {
   "flowers": [
     {
-      "id": "1",
-      "title": "Red Roses Bouquet",
-      "brand": "Blooming Elegance",
-      "price": "20",
-      "description": "A classic bouquet of fresh red roses, perfect for expressing love and admiration.",
-      "image_url": "https://images.unsplash.com/photo-1562690868-60bbe7293e94?q=80&w=1918&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": "2",
-      "title": "Sunflower Delight",
-      "brand": "Sunshine Blooms",
-      "price": "35",
-      "description": "Bright and cheerful sunflowers arranged in a beautiful bouquet, ideal for spreading joy.",
-      "image_url": "https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
       "id": "3",
       "title": "Orchid Elegance",
       "brand": "Exotic Flora",
@@ -85,6 +69,14 @@
       "title": "close-up",
       "brand": "Boquet ",
       "price": "20",
+      "description": "Bethar oshudh",
+      "image_url": "https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "id": "",
+      "title": "weds",
+      "brand": "waeds",
+      "price": "23",
       "description": "Bethar oshudh",
       "image_url": "https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }

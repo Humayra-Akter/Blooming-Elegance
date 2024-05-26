@@ -11,7 +11,12 @@ const AllProducts = () => {
   }, []);
 
   const handleDeleteProduct = (id) => {
-    setProducts(products.filter((product) => product.id !== id));
+    const confirmDelete = window.confirm(
+      "Are you sure you want to delete this product?"
+    );
+    if (confirmDelete) {
+      setProducts(products.filter((product) => product.id !== id));
+    }
   };
 
   return (
