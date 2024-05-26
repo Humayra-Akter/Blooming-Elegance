@@ -33,7 +33,9 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link to={"/"}>Home</Link>
+              <Link className="font-semibold text-" to={"/"}>
+                Home
+              </Link>
             </li>
             <li>
               <Link to={"/about"}>About</Link>
@@ -70,24 +72,46 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to={"/"}>Home</Link>
+            <Link className="font-semibold text-lg mr-3 uppercase" to={"/"}>
+              Home
+            </Link>
           </li>
           <li>
-            <Link to={"/about"}>About</Link>
+            <Link
+              className="font-semibold text-lg mr-3 uppercase"
+              to={"/about"}
+            >
+              About
+            </Link>
           </li>
           {!user && (
             <>
               <li>
-                <Link to={"/login"}>Login</Link>
+                <Link
+                  className="font-semibold text-lg mr-3 uppercase"
+                  to={"/login"}
+                >
+                  Login
+                </Link>
               </li>
               <li>
-                <Link to={"/register"}>Register</Link>
+                <Link
+                  className="font-semibold text-lg mr-3 uppercase"
+                  to={"/register"}
+                >
+                  Register
+                </Link>
               </li>
             </>
           )}
           {user && (
             <li>
-              <Link to={"/dashboard"}>Dashboard</Link>
+              <Link
+                className="font-semibold text-lg mr-3 uppercase"
+                to={"/dashboard"}
+              >
+                Dashboard
+              </Link>
             </li>
           )}
         </ul>

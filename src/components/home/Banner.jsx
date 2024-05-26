@@ -62,7 +62,7 @@ const Banner = () => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam eos
             illum molestiae recusandae quia, sequi odio qui vel maxime officiis.
           </p>
-          <button className="btn w-1/2 font-bold text-lg border-accent border-2 uppercase text-pink-700 bg-gradient-to-l from-accent to-secondary">
+          <button className="btn w-1/2 font-bold text-lg border-accent border-2 uppercase text-pink-700 bg-gradient-to-l from-primary to-secondary">
             Get started
           </button>
         </div>
