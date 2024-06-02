@@ -1,22 +1,6 @@
 {
   "flowers": [
     {
-      "id": "3",
-      "title": "Orchid Elegance",
-      "brand": "Exotic Flora",
-      "price": "75",
-      "description": "Elegant and exotic orchids that add a touch of sophistication to any setting.",
-      "image_url": "https://images.unsplash.com/photo-1606041008023-472dfb5e530f?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      "id": "4",
-      "title": "Mixed Spring Flowers",
-      "brand": "Seasonal Blooms",
-      "price": "45",
-      "description": "A vibrant mix of spring flowers including tulips, daffodils, and hyacinths.",
-      "image_url": "https://images.unsplash.com/photo-1471899236350-e3016bf1e69e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
       "id": "5",
       "title": "Lilies of the Valley",
       "brand": "Pure Blossom",

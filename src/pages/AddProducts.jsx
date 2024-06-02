@@ -3,16 +3,15 @@ const AddProducts = () => {
     e.preventDefault();
 
     const form = e.target;
-    const id = form.id.value;
     const title = form.title.value;
     const brand = form.brand.value;
     const price = form.price.value;
     const description = form.description.value;
     const image_url = form.image_url.value;
 
-    const data = { id, title, brand, price, description, image_url };
+    const data = { title, brand, price, description, image_url };
 
-    await fetch("http://localhost:3000/flowers", {
+    await fetch("http://localhost:5000/flowers", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -74,14 +73,7 @@ const AddProducts = () => {
               placeholder="Image URL"
             />
           </div>
-          <div className="mt-2">
-            <input
-              className="bg-gray-100 p-4 w-full border border-black rounded-lg"
-              type="text"
-              name="id"
-              placeholder="ID"
-            />
-          </div>
+
           <div className="mt-2 flex justify-center items-center">
             <input
               className="btn mt-4 text-lg border-accent border-2 uppercase bg-primary text-white w-full"
