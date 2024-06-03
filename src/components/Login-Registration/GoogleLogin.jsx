@@ -19,7 +19,7 @@ const GoogleLogin = () => {
             },
             body: JSON.stringify(userInfo),
           })
-            .then((res = res.json()))
+            .then((res => res.json()))
             .then((data) => console.log(data));
       }
     });

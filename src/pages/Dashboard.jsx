@@ -1,15 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import useAuth from "../hooks/useAuth";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
+  const { user } = useAuth();
+  const [userInfo, setUserInfo] = useState();
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/user/${user?.email}`)
+      .then((res) => res.json())
+      .then((data) => setUserInfo(data));
+  }, [user]);
+
+  console.log(userInfo);
+
   return (
     <div className="p-6 bg-pink-50 flex-grow">
       {/* Welcome Message */}
       <div className="mb-6 p-4 bg-white rounded shadow-md">
-        <h2 className="text-xl font-bold">
-          Welcome to Your Flower Shop Dashboard!
-        </h2>
+        <h2 className="text-xl font-bold">Welcome {userInfo?.name}</h2>
         <p>Here you can manage your products, orders, customers, and more.</p>
       </div>
+      <Link
+        to={`/dashboard/profile/edit/${userInfo?._id}`}
+        className="btn bg-red-500 text-white"
+      >
+        Edit profile
+      </Link>
 
       {/* Product Overview */}
       <div className="mb-6">
