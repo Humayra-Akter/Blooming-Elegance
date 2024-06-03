@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
@@ -11,7 +12,7 @@ const SingleProductCardDashboard = ({ flower, onDelete }) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        toast.success("Product deleted");
         onDelete(_id);
       });
   };
