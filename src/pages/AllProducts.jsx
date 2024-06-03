@@ -5,17 +5,17 @@ const AllProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/flowers/")
+    fetch("http://localhost:5000/flowers")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
 
-  const handleDeleteProduct = (id) => {
+  const handleDeleteProduct = (_id) => {
     const confirmDelete = window.confirm(
       "Are you sure you want to delete this product?"
     );
     if (confirmDelete) {
-      setProducts(products.filter((product) => product.id !== id));
+      setProducts(products.filter((product) => product._id !== id));
     }
   };
 
@@ -27,7 +27,7 @@ const AllProducts = () => {
       <div className="my-16 grid grid-cols-3 gap-4">
         {products.map((flower) => (
           <SingleProductCardDashboard
-            key={flower.id}
+            key={flower._id}
             flower={flower}
             onDelete={handleDeleteProduct}
           />

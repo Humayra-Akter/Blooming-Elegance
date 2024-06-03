@@ -1,4 +1,5 @@
 import { useState } from "react";
+import toast from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 
 const EditProducts = () => {
@@ -15,16 +16,15 @@ const EditProducts = () => {
     e.preventDefault();
 
     const form = e.target;
-    const id = form.id.value;
     const title = form.title.value;
     const brand = form.brand.value;
     const price = form.price.value;
     const description = form.description.value;
     const image_url = form.image_url.value;
 
-    const data = { id, title, brand, price, description, image_url };
+    const data = { title, brand, price, description, image_url };
 
-    await fetch(`http://localhost:3000/flowers/${flower.id}`, {
+    await fetch(`http://localhost:5000/flowers/${flower._id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",
@@ -33,7 +33,7 @@ const EditProducts = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        toast.success("Product updated successfully!");
         setSuccessMessage("Product updated successfully!");
         setTimeout(() => setSuccessMessage(""), 3000);
       });
@@ -95,21 +95,12 @@ const EditProducts = () => {
               onChange={(e) => setImageURL(e.target.value)}
             />
           </div>
-          <div className="mt-2">
-            <input
-              className="bg-gray-100 p-4 w-full border border-black rounded-lg"
-              type="text"
-              name="id"
-              placeholder="ID"
-              value={id}
-              onChange={(e) => setId(e.target.value)}
-            />
-          </div>
+
           <div className="mt-2 flex justify-center items-center">
             <input
-              className="btn mt-4 w-full bg-red-500 text-white p-4"
+              className="btn mt-4 w-1/2 bg-red-500 text-white p-4"
               type="submit"
-              value="Add product"
+              value="Update product"
             />
           </div>
         </form>
