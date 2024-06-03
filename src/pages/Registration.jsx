@@ -33,14 +33,14 @@ const Registration = () => {
             email: data?.user?.email,
             name: name,
           };
-          fetch("http://localhost:5000/user", {
+          fetch("https://blooming-elegance-server.vercel.app/user", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(userInfo),
           })
-            .then((res => res.json()))
+            .then((res) => res.json())
             .then((data) => console.log(data));
         }
       });

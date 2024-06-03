@@ -21,7 +21,7 @@ export default function EditProfile() {
       //   email: data?.email,
     };
 
-    fetch(`http://localhost:5000/user/${data?.email}`, {
+    fetch(`https://blooming-elegance-server.vercel.app/user/${data?.email}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

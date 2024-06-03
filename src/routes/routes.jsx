@@ -23,13 +23,16 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("http://localhost:5000/flowers"),
+        loader: () =>
+          fetch("https://blooming-elegance-server.vercel.app/flowers"),
       },
       {
         path: "/products/:id",
         element: <ProductDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/flowers/${params.id}`),
+          fetch(
+            `https://blooming-elegance-server.vercel.app/flowers/${params.id}`
+          ),
       },
       {
         path: "/about",
@@ -57,7 +60,8 @@ export const router = createBrowserRouter([
             <Dashboard />
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/flowers"),
+        loader: () =>
+          fetch("https://blooming-elegance-server.vercel.app/flowers"),
       },
       {
         path: "profile/edit/:id",
@@ -67,7 +71,9 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/user/get/${params.id}`),
+          fetch(
+            `https://blooming-elegance-server.vercel.app/user/get/${params.id}`
+          ),
       },
       {
         path: "all-products",
@@ -93,7 +99,9 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/flowers/${params.id}`),
+          fetch(
+            `https://blooming-elegance-server.vercel.app/flowers/${params.id}`
+          ),
       },
     ],
   },

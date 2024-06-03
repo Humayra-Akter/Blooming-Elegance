@@ -6,7 +6,7 @@ const SingleProductCardDashboard = ({ flower, onDelete }) => {
   const { _id, title, brand, price, description, image_url } = flower;
 
   const handleDelete = async () => {
-    await fetch(`http://localhost:5000/flowers/${_id}`, {
+    await fetch(`https://blooming-elegance-server.vercel.app/flowers/${_id}`, {
       method: "DELETE",
       Authorization: `Bearer ${token}`,
     })
