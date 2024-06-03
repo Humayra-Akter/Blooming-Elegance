@@ -8,7 +8,7 @@ const Products = ({ data }) => {
 
       <div className="flex gap-6 px-6 justify-center items-center ">
         {data.slice(0, 3).map((flower) => (
-          <SingleProduct key={flower.id} flower={flower} />
+          <SingleProduct key={flower._id} flower={flower} />
         ))}
       </div>
     </div>

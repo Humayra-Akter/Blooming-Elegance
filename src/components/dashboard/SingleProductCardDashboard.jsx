@@ -1,14 +1,14 @@
-/* eslint-disable react/prop-types */
 import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
 const SingleProductCardDashboard = ({ flower, onDelete }) => {
+  const token = localStorage.getItem("token");
   const { _id, title, brand, price, description, image_url } = flower;
 
   const handleDelete = async () => {
     await fetch(`http://localhost:5000/flowers/${_id}`, {
       method: "DELETE",
+      Authorization: `Bearer ${token}`,
     })
       .then((res) => res.json())
       .then((data) => {

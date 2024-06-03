@@ -57,6 +57,7 @@ export const router = createBrowserRouter([
             <Dashboard />
           </PrivateRoute>
         ),
+        loader: () => fetch("http://localhost:5000/flowers"),
       },
       {
         path: "profile/edit/:id",

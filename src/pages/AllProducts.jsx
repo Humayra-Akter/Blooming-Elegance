@@ -22,7 +22,7 @@ const AllProducts = () => {
   return (
     <div>
       <h1 className="text-5xl text-primary font-bold text-center">
-        All Produts
+        All Products
       </h1>
       <div className="my-16 grid grid-cols-3 gap-4">
         {products.map((flower) => (

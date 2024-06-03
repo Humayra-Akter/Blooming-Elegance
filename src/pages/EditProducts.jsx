@@ -13,6 +13,7 @@ const EditProducts = () => {
   const [image_url, setImageURL] = useState(flower.image_url);
 
   const handleSubmit = async (e) => {
+    const token = localStorage.getItem("token");
     e.preventDefault();
 
     const form = e.target;
@@ -28,6 +29,7 @@ const EditProducts = () => {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",
+        Authorization: `Bearer ${token}`,
       },
       body: JSON.stringify(data),
     })

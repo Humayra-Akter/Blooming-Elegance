@@ -12,36 +12,49 @@ const Dashboard = () => {
       .then((data) => setUserInfo(data));
   }, [user]);
 
-  console.log(userInfo);
-
   return (
     <div className="p-6 bg-pink-50 flex-grow">
       {/* Welcome Message */}
-      <div className="mb-6 p-4 bg-white rounded shadow-md">
-        <h2 className="text-xl font-bold">Welcome {userInfo?.name}</h2>
-        <p>Here you can manage your products, orders, customers, and more.</p>
+      <div className="mb-6 p-4 bg-white rounded shadow-md flex items-end justify-between">
+        <div>
+          <h2 className="text-xl font-bold">Welcome {userInfo?.name}</h2>
+          <h2 className="my-2 text-gray-600 font-bold">{userInfo?.email}</h2>
+          <h2 className=" text-gray-600 font-bold">Age: {userInfo?.age}</h2>
+          <h2 className="my-2 text-gray-600 font-bold">
+            MobileNumber: {userInfo?.mobileNumber}
+          </h2>
+          <p>Here you can manage your products, orders, customers, and more.</p>
+        </div>
+        <div>
+          <div className="absolute top-40 right-36">
+            <img
+              className="w-12 rounded-full border-2 border-black"
+              src={user?.photoURL || "/public/placeholder.jpg"}
+            />
+          </div>
+          <Link
+            to={`/dashboard/profile/edit/${userInfo?._id}`}
+            className="btn bg-red-500 text-white"
+          >
+            Edit profile
+          </Link>
+        </div>
       </div>
-      <Link
-        to={`/dashboard/profile/edit/${userInfo?._id}`}
-        className="btn bg-red-500 text-white"
-      >
-        Edit profile
-      </Link>
 
       {/* Product Overview */}
       <div className="mb-6">
         <h3 className="text-lg font-semibold mb-4">Product Overview</h3>
         <div className="grid grid-cols-3 gap-4">
           {products.map((product) => (
-            <div key={product.id} className="bg-white p-4 rounded shadow-md">
+            <div key={product?._id} className="bg-white p-4 rounded shadow-md">
               <img
-                src={product.image_url}
-                alt={product.title}
+                src={product?.image_url}
+                alt={product?.title}
                 className="w-full h-32 object-cover mb-4 rounded"
               />
-              <h4 className="text-md font-bold mb-2">{product.title}</h4>
-              <p className="text-sm text-gray-600">{product.description}</p>
-              <p className="text-lg font-semibold mt-4">${product.price}</p>
+              <h4 className="text-md font-bold mb-2">{product?.title}</h4>
+              <p className="text-sm text-gray-600">{product?.description}</p>
+              <p className="text-lg font-semibold mt-4">${product?.price}</p>
             </div>
           ))}
         </div>
@@ -71,28 +84,6 @@ const Dashboard = () => {
               ))}
             </tbody>
           </table>
-        </div>
-      </div>
-
-      {/* User Information */}
-      <div className="mb-6">
-        <h3 className="text-lg font-semibold mb-4">User Information</h3>
-        <div className="bg-white p-4 rounded shadow-md">
-          <div className="flex items-center mb-4">
-            <img
-              src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="User Avatar"
-              className="w-16 h-16 rounded-full mr-4"
-            />
-            <div>
-              <h4 className="text-md font-bold">Jane Doe</h4>
-              <p className="text-sm text-gray-600">jane.doe@example.com</p>
-            </div>
-          </div>
-          <p className="text-sm text-gray-600">
-            Jane Doe is an admin of the flower shop, managing products, orders,
-            and customer relationships.
-          </p>
         </div>
       </div>
     </div>

@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import { useLoaderData } from "react-router-dom";
 
 export default function EditProfile() {
@@ -28,7 +29,7 @@ export default function EditProfile() {
       body: JSON.stringify(userData),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => toast.success("Profile updated"));
   };
   return (
     <div>
@@ -71,7 +72,6 @@ export default function EditProfile() {
             type="submit"
             value="Update Profile"
             className="btn bg-red-500 text-white"
-           
           />
         </div>
       </form>
