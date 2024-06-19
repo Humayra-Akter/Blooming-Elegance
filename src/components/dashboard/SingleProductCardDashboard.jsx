@@ -20,13 +20,13 @@ const SingleProductCardDashboard = ({ flower, onDelete }) => {
   };
 
   return (
-    <div className="card mb-6 bg-pink-50 border-2 shadow-xl">
+    <div className="card flex-row mb-6 bg-pink-50 border-2 shadow-xl">
       <figure>
-        <img className="h-80 w-72 rounded mt-7" src={image_url} alt="flowers" />
+        <img className="w-72 h-44 rounded m-10" src={image_url} alt="flowers" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
-        <h3 className="text-xl font-semibold">{brand}</h3>
+        <h3 className="text-pink-700 font-semibold">Brand: {brand}</h3>
         <h3 className="text-xl font-semibold">{price}</h3>
         <p>{description}</p>
         <div className="card-actions justify-center mt-2">
