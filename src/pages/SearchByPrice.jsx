@@ -1,26 +1,18 @@
 import { useState } from "react";
 
 const SearchByPrice = ({ onSearch }) => {
-  const [minPrice, setMinPrice] = useState("");
   const [maxPrice, setMaxPrice] = useState("");
 
   const handleSearch = () => {
-    if (minPrice && maxPrice) {
-      onSearch(minPrice, maxPrice);
+    if (maxPrice) {
+      onSearch(maxPrice);
     } else {
-      alert("Please enter both minimum and maximum prices");
+      alert("Please enter a maximum price");
     }
   };
 
   return (
     <div className="search-container flex justify-center mb-4">
-      <input
-        type="number"
-        placeholder="Min Price"
-        value={minPrice}
-        onChange={(e) => setMinPrice(e.target.value)}
-        className="input input-bordered mx-2"
-      />
       <input
         type="number"
         placeholder="Max Price"
