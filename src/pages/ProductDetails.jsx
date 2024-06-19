@@ -23,11 +23,6 @@ const ProductDetails = () => {
           <h3 className="text-2xl font-semibold">{price} $$</h3>
           <h3 className="text-xl font-semibold">{brand}</h3>
           <p className="text-lg font-light">{description}</p>
-          <div className="flex  justify-end">
-            <button className="mt-10 btn w-1/3 font-bold text-lg border-accent border-2 uppercase  bg-gradient-to-l from-primary to-secondary">
-              BUY
-            </button>
-          </div>
         </div>
       </div>
     </div>
