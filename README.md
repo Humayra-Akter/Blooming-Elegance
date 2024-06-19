@@ -1,40 +1,32 @@
-Event Booking Application
+Flower Shop Management Application
+Blooming-Elegance
 
 ## Backend Server
 
-https://ticket-booking-server-ocgh.onrender.com/
+https://blooming-elegance-server.onrender.com/
 
 ## Frontend
 
-https://ticket-booking-tawny.vercel.app/
+https://blooming-elegance-mj2j0pppw-humayraakters-projects.vercel.app/
 
 ## Overview
 
-This project is a full-stack Event Booking Application where users can book events, both free and paid, using Stripe for payment processing. The application uses React for the frontend, Node.js/Express for the backend, and Firebase for user authentication.
+This project is a full-stack Flower Shop managing Application where users can see the products, can edit and delete also. The application uses React-Vite for the frontend, Node.js/Express for the backend, and Firebase for user authentication.
 
 ## Features
 
 User authentication with Firebase
-Event listing with details
-Stripe integration for payment processing
-Booking functionality for both free and paid events
-Creating Events and update delete
+Product(Flower) listing with details
+Editing and deleting functionality for products(flower)
+Creating products(flower) list
 
 ## Technologies
 
-Frontend: React, React-Bootstrap, React-Firebase-Hooks, Stripe Checkout
-Backend: Node.js, Express, Stripe API, MongoDB
+Frontend: React, tailwind, daisyUI, React-Firebase-Hooks
+Backend: Node.js, Express, MongoDB
 Authentication: Firebase Authentication
 Backend deployment: Render
 Frontend deployment: vercel
-
-## Admin credentials
-
-email: programminghero@gmail.com
-pass: 123456789
-or--
-email: humayra25@gmail.com
-pass: 123456789
 
 ## Usage
 
