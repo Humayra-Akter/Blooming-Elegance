@@ -6,12 +6,15 @@ const SingleProductCardDashboard = ({ flower, onDelete }) => {
   const { _id, title, brand, price, description, image_url } = flower;
 
   const handleDelete = async () => {
-    await fetch(`http://localhost:5000/flowers/${_id}`, {
-      method: "DELETE",
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    })
+    await fetch(
+      `https://blooming-elegance-server.onrender.com/flowers/${_id}`,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         toast.success("Product deleted");

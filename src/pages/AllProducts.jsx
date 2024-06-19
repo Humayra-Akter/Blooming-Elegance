@@ -11,7 +11,9 @@ const AllProducts = () => {
   }, []);
 
   const fetchProducts = async () => {
-    const response = await fetch("http://localhost:5000/flowers");
+    const response = await fetch(
+      "https://blooming-elegance-server.onrender.com/flowers"
+    );
     const data = await response.json();
     setProducts(data);
     setFilteredProducts(data);
