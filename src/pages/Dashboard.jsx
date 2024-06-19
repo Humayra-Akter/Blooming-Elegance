@@ -7,7 +7,7 @@ const Dashboard = () => {
   const [userInfo, setUserInfo] = useState();
 
   useEffect(() => {
-    fetch(`https://blooming-elegance-server.vercel.app/user/${user?.email}`)
+    fetch(`http://localhost:5000/user/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setUserInfo(data));
   }, [user]);
@@ -23,7 +23,6 @@ const Dashboard = () => {
           <h2 className="my-2 text-gray-600 font-bold">
             MobileNumber: {userInfo?.mobileNumber}
           </h2>
-          <p>Here you can manage your products, orders, customers, and more.</p>
         </div>
         <div>
           <div className="absolute top-40 right-36">
@@ -42,7 +41,7 @@ const Dashboard = () => {
       </div>
 
       {/* Product Overview */}
-      <div className="mb-6">
+      {/* <div className="mb-6">
         <h3 className="text-lg font-semibold mb-4">Product Overview</h3>
         <div className="grid grid-cols-3 gap-4">
           {products.map((product) => (
@@ -58,10 +57,10 @@ const Dashboard = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Recent Orders */}
-      <div className="mb-6">
+      {/* <div className="mb-6">
         <h3 className="text-lg font-semibold mb-4">Recent Orders</h3>
         <div className="bg-white p-4 rounded shadow-md">
           <table className="w-full text-left">
@@ -85,7 +84,7 @@ const Dashboard = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

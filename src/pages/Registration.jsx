@@ -33,7 +33,7 @@ const Registration = () => {
             email: data?.user?.email,
             name: name,
           };
-          fetch("https://blooming-elegance-server.vercel.app/user", {
+          fetch("http://localhost:5000/user", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

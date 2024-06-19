@@ -25,17 +25,14 @@ const EditProducts = () => {
 
     const data = { title, brand, price, description, image_url };
 
-    await fetch(
-      `https://blooming-elegance-server.vercel.app/flowers/${flower._id}`,
-      {
-        method: "PATCH",
-        headers: {
-          "Content-type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify(data),
-      }
-    )
+    await fetch(`http://localhost:5000/flowers/${flower._id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify(data),
+    })
       .then((res) => res.json())
       .then((data) => {
         toast.success("Product updated successfully!");

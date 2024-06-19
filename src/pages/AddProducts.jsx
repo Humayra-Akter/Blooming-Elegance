@@ -14,7 +14,7 @@ const AddProducts = () => {
 
     const data = { title, brand, price, description, image_url };
 
-    await fetch("https://blooming-elegance-server.vercel.app/flowers", {
+    await fetch("http://localhost:5000/flowers", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

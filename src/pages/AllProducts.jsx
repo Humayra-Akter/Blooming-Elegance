@@ -5,7 +5,7 @@ const AllProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://blooming-elegance-server.vercel.app/flowers")
+    fetch("http://localhost:5000/flowers")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
