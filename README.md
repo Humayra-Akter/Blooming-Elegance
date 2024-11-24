@@ -43,3 +43,9 @@ Products can be edited(update), deleted.
 
 4.Handling Payments
 Can search products by price-range, where inserting aa value defines the maximum range and the default minimum price is 0.
+
+
+![Project Screenshot](./src/assets/home.png)
+![Project Screenshot](./src/assets/dashboard.png)
+![Project Screenshot](./src/assets/all-product.png)
+![Project Screenshot](./src/assets/add-product.png)
